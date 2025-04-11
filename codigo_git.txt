@@ -38,3 +38,11 @@ git commit -m "Actualizacion de requirements"
 luego subimos el archivo 
 
 git push origin main 
+
+
+
+
+clonar un repositorio
+cd ruta/a/tu/carpeta
+
+git clone https://github.com/usuario/nombre-del-repositorio.git

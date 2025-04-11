@@ -50,7 +50,11 @@ const toggler = document.getElementById('theme-toggle');
 toggler.addEventListener('change', function () {
     if (this.checked) {
         document.body.classList.add('dark');
+        document.querySelector('.container-form').classList.add('dark');
+        document.querySelector('.container-form  .form-consultas').classList.add('dark');
     } else {
         document.body.classList.remove('dark');
+        document.querySelector('.container-form').classList.remove('dark');
+        document.querySelector('.container-form .form-consultas').classList.remove('dark');
     }
 });

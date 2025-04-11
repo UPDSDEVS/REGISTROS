@@ -244,13 +244,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--primary);
+    background: transparent;
     color: var(--light);
     font-size: 18px;
     border: none;
     outline: none;
     border-radius: 0 36px 36px 0;
     cursor: pointer;
+
+
 }
 
 .content nav .notif{
@@ -322,23 +324,56 @@ body{
     flex-wrap: wrap;
 }
 .content main .container-form{
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 17vh;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+
+}
+
+
+.content main .container-form>div{
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
 }
 .content main .form-consultas{
     display: flex;
     flex-direction: row; /* Apila en columna */
     align-items: center; /* Alinea a la izquierda */
     gap: 12px;
-    width: 90%;
+    width: 100%;
+    height: auto;
     justify-content: center; 
     background: #c6c7ce;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.form-consultas.dark {
+    background-color: #444;
+}
+
+.content main .form-consultas .buscador {
+    margin: 10px;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.content main .form-consultas .buscador label{
+    align-self: flex-start;
+    margin-bottom: 6px;
+    font-weight:bold;
+}
+.buscador-div {
+    padding-top: 10px;
+    font-weight: bold;
+    
 }
 
 
